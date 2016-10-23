@@ -1,0 +1,35 @@
+p {
+	height:50px;
+	width:50px;
+	border:1px solid black;
+	margin:0px;
+	float:left;
+}
+
+#p1 {
+	background-color:red;
+}
+
+#p2 {
+	background-color:magenta;
+}
+
+#p3 {
+	background-color:yellow;
+}
+
+#p4 {
+	background-color:blue;
+}
+
+div {
+	border:1px solid green;
+}
+
+html {
+	# margin-left:10px;
+}
+
+section {
+	clear:left;
+}
