@@ -1,35 +1,93 @@
-p {
-	height:50px;
-	width:50px;
-	border:1px solid black;
+body {
+	font-family: monospace;
 	margin:0px;
-	float:left;
 }
 
-#p1 {
-	background-color:red;
+h1 {
+	text-align:center;
 }
 
-#p2 {
-	background-color:magenta;
+p {
+	margin:5px 10px;
+	clear: both;
 }
 
-#p3 {
-	background-color:yellow;
-}
-
-#p4 {
-	background-color:blue;
+* {
+	box-sizing:border-box;
 }
 
 div {
-	border:1px solid green;
+	border:2px solid #800;
+	border-collapse:collapse;
+	background-color:#e93a3a;
+	margin:0px;
+	min-height:130px;
 }
 
-html {
-	# margin-left:10px;
+.title {
+	width:110px;
+	text-align:center;
+	float: right;
+	margin: 0px;
+	min-height:0px;
+	border-top:0px;
+	border-right:0px;
 }
 
-section {
-	clear:left;
+.container {
+    width:90%;
+    margin:0 auto;
+    background-color:#fff;
+    border:0px;
+}
+
+.clear {
+    clear:both;
+    min-height:0px;
+    border: 0px;
+}
+
+#brains {
+    background-color: black;
+    color: red;
+}
+
+#intest {
+    background-color: #512e2e;
+    color: #ff7575;
+}
+
+#blood {
+    background-color: red;
+    color: black;
+}
+
+@media (min-width: 992px) {
+	.col-lg-30 {
+        margin: 0 5px;
+		width: calc(33.33% - 10px);
+        float: left;
+        background-color:#d82929;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-50 {
+		width: calc(50% - 10px);
+        float: left;
+        margin: 0 5px 5px 5px;
+	}
+    
+    .col-md-100 {
+        margin: 0 5px;
+        clear: both;
+	}
+}
+
+@media (max-width: 767px) {
+    .col-lg-30 {
+        margin: 5px 5px;
+		width: calc(100% - 10px);
+        background-color:#fa4b4b;
+	}
 }
