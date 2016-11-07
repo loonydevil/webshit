@@ -5,12 +5,20 @@ body {
     background-color: #3d4a7a;
 }
 
-h2, h1 {
-	text-align: center;
-}
-
 a:hover {
     text-decoration: none;
+}
+
+ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li {
+	border: 1px solid #3d4a7a;
+	border-collapse:collapse;
 }
 
 #logo-text {
@@ -22,6 +30,13 @@ a:hover {
 
 #navigation {
     background-color: #f23f3f;
+	margin: 0px;
+}
+
+#mobile-menu {
+	background-color: #58669b;
+	min-height: 0px;
+	padding: 0px;
 }
 
 #logo-img {
@@ -30,6 +45,7 @@ a:hover {
     width: 345px;
     float: left;
     padding: 0px;
+	min-height:130px;
 }
 
 .navbar {
@@ -37,9 +53,17 @@ a:hover {
     border-radius: 0px;
 }
 
-p {
-	margin:5px 10px;
-	clear: both;
+.navbar-toggle {
+	margin-right: 0px;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #555;
+	background-color: #e22;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #ff7a7a;
 }
 
 * {
@@ -47,10 +71,7 @@ p {
 }
 
 div {
-	border:2px solid green;
-	border-collapse:collapse;
 	margin:0px;
-	min-height:130px;
 }
 
 .title {
@@ -64,58 +85,19 @@ div {
 }
 
 .container {
-    width:90%;
+    width:100%;
     margin:0 auto;
-    border:0px;
 }
 
-.clear {
-    clear:both;
-    min-height:0px;
-    border: 0px;
-}
+@media (min-width: 768px) {
 
-#brains {
-    background-color: black;
-    color: red;
-}
-
-#intest {
-    background-color: #512e2e;
-    color: #ff7575;
-}
-
-#blood {
-    background-color: red;
-    color: black;
-}
-
-@media (min-width: 992px) {
-	.col-lg-30 {
-        margin: 0 5px;
-		width: calc(33.33% - 10px);
-        float: left;
-        background-color:#d82929;
+	/* NO F***NG IDEA WHY BOOTSTRAP SETS -15px HERE SO JUST OVERRODE THAT*/
+	#logo-img {
+	margin: 0px;
 	}
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.col-md-50 {
-		width: calc(50% - 10px);
-        float: left;
-        margin: 0 5px 5px 5px;
-	}
-    
-    .col-md-100 {
-        margin: 0 5px;
-        clear: both;
-	}
-}
-
-@media (max-width: 767px) {
-    .col-lg-30 {
-        margin: 5px 5px;
-		width: calc(100% - 10px);
-        background-color:#fa4b4b;
-	}
+	
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
 }
