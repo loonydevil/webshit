@@ -1,0 +1,121 @@
+body {
+	font-family: 'Freckle Face', monospace;
+    font-size: 1.7em;
+	margin:0px;
+    background-color: #3d4a7a;
+}
+
+h2, h1 {
+	text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#logo-text {
+    font-family: 'VT323', monospace;
+    color: #414141;
+    font-size: 1.9em;
+    margin-top: 0px;
+}
+
+#navigation {
+    background-color: #f23f3f;
+}
+
+#logo-img {
+    background: url('../img/logo.png') #f23f3f no-repeat;
+    background-position: 0px 10px;
+    width: 345px;
+    float: left;
+    padding: 0px;
+}
+
+.navbar {
+    border: 0px;
+    border-radius: 0px;
+}
+
+p {
+	margin:5px 10px;
+	clear: both;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+div {
+	border:2px solid green;
+	border-collapse:collapse;
+	margin:0px;
+	min-height:130px;
+}
+
+.title {
+	width:110px;
+	text-align:center;
+	float: right;
+	margin: 0px;
+	min-height:0px;
+	border-top:0px;
+	border-right:0px;
+}
+
+.container {
+    width:90%;
+    margin:0 auto;
+    border:0px;
+}
+
+.clear {
+    clear:both;
+    min-height:0px;
+    border: 0px;
+}
+
+#brains {
+    background-color: black;
+    color: red;
+}
+
+#intest {
+    background-color: #512e2e;
+    color: #ff7575;
+}
+
+#blood {
+    background-color: red;
+    color: black;
+}
+
+@media (min-width: 992px) {
+	.col-lg-30 {
+        margin: 0 5px;
+		width: calc(33.33% - 10px);
+        float: left;
+        background-color:#d82929;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-50 {
+		width: calc(50% - 10px);
+        float: left;
+        margin: 0 5px 5px 5px;
+	}
+    
+    .col-md-100 {
+        margin: 0 5px;
+        clear: both;
+	}
+}
+
+@media (max-width: 767px) {
+    .col-lg-30 {
+        margin: 5px 5px;
+		width: calc(100% - 10px);
+        background-color:#fa4b4b;
+	}
+}
